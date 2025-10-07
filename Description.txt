@@ -1,0 +1,14 @@
+Cozy Bean Cafe – A Warm & Inviting Homepage
+
+This project is a single-page website for a fictional Cafe named “Cozy Bean Cafe.” 
+The concept captures the charm of a local neighborhood Cafe where fresh brews, 
+comforting snacks, and relaxing vibes come together. 
+
+The design uses a warm coffee-inspired color palette with soft browns and creamy 
+tones to create a cozy, homelike feeling. A large hero image showcases the cafe’s 
+atmosphere, while elegant typography and clean sections highlight the cafe’s 
+specialties. CSS hover effects, smooth animations, and responsive styling ensure
+the site always looks inviting and fast on desktops, tablets, and mobile screens." 
+
+The goal of this design was to bring out the cozy, friendly spirit of a cafe using 
+only HTML and CSS, proving that aesthetic design can be achieved without JavaScript.

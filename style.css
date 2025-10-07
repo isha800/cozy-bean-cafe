@@ -1,0 +1,241 @@
+ 
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #f9f5f0;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: rgba(74, 44, 29, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+ .navbar {
+             
+        background: #6b4226; 
+    }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px; 
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffce7b;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffce7b;
+    transition: width 0.3s ease-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.head{
+    height: 100vh;
+    background: url('images/hero.jpg') ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+        transform:scale(1.1);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.head::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.head-text {
+    background: transparent;
+    padding: 2rem;
+    border-radius: 10px;
+    z-index: 20;
+    color: white;
+}
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+h2, h3 {
+  font-family: 'Merriweather', serif;
+   font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #4a2c1d;
+}
+
+h1 {
+   font-family: 'Merriweather', serif;
+   font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+
+}
+h1::after {
+    content: ' ☕ Welcome to The Cozy Bean Cafe';
+    position: absolute;
+    top: -10px; 
+    right: 50%; 
+    font-size: 1.2rem;
+   animation: starEmit 2.5s ease-out infinite; 
+    animation-delay: 1.2s; 
+}
+h1::before {
+    content: '☕ Welcome to The Cozy Bean Cafe';
+
+    animation: sparkleEmit 2s ease-out infinite;
+    animation-delay: 0.5s; 
+    left: 30%;
+}
+@keyframes sparkleEmit {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(1); 
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.5); 
+    }
+}
+
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem; 
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                box-shadow 0.3s;
+    text-align: left;
+}
+
+.item:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.contact {
+    background: #6b4226;
+    color: white;
+    padding: 4rem 2rem;
+    
+}
+
+
+.contact h2 {
+    color: white;
+}
+
+.contact a {
+    color: #ffce7b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #fff;
+}
+@media (max-width: 768px) {
+    
+     
+
+    section {
+        padding: 2rem 1rem; 
+    }
+
+    .item {
+        width: 90%;
+        max-width: 350px;
+    }
+}
