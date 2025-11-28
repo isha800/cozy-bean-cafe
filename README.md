@@ -4,6 +4,9 @@ Welcome to **Cozy Bean Cafe** — a beautifully designed single-page café homep
 This project was created for the **"Web Design Project — No JavaScript" Hackathon**, focusing on creativity, design aesthetics, and clean code structure.
 
 ---
+##  Live Demo  
+🔗 **View Project:** http://cozy-bean-cafe.netlify.app/ 
+-----
 
 ##  About the Project
 
