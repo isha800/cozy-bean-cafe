@@ -5,7 +5,7 @@ This project was created for the **"Web Design Project — No JavaScript" Hackat
 
 ---
 ##  Live Demo  
-**View Project:**   http://cozy-bean-cafe.netlify.app/ 
+View Project:   http://cozy-bean-cafe.netlify.app/ 
 -----
 
 ##  About the Project
